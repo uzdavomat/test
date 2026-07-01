@@ -21,6 +21,10 @@ async def start(message: Message):
 async def help(message: Message):
     await message.answer('qanday jardem kerek')
 
+@dp.message(Command('tel'))
+async def tel(message: Message):
+    await message.answer('+998867543')
+
 
 
 async def main():
